@@ -1,0 +1,79 @@
+<div class="container">
+  <div class="row">
+    <div class="col-6">
+      <div>
+        <div class="form-group">
+          <form [formGroup]="Form">
+          <label for="exampleInputEmail1">Noms</label>
+          <input
+            type="text"
+            formControleName="nom"
+            class="validate"
+            id="exampleInputEmail1"
+            aria-describedby="emailHelp"
+          />
+        </div>
+        <div class="form-group">
+          <label for="exampleInputPassword1">Prénoms</label>
+          <input
+          formControleName="prenom"
+          class="validate"
+            class="form-control"
+            id="exampleInputPassword1"
+          />
+        </div>
+        <div class="form-group">
+          <label for="exampleInputPassword1">Téléphone</label>
+          <input
+          formControleName="tel"
+          class="validate"
+            class="form-control"
+            id="exampleInputPassword1"
+          />
+        </div>
+        <div class="form-group">
+          <label for="exampleInputPassword1">E-mail</label>
+          <input
+          formControleName="email"
+          class="validate"
+            class="form-control"
+            id="exampleInputPassword1"
+          />
+        </div>
+        <button
+          type="submit"
+          (click)="onSubmit(contact)"
+          class="btn btn-primary d-block m-auto"
+        >
+          {{ buttonText }}
+        </button>
+      </div>
+    </div>
+    <div class="col-6">
+      <h1>
+        Liste des contacts
+      </h1>
+
+      <ul>
+        <ol *ngFor="let item of contacts; let id = index">
+          {{
+            id + 1
+          }}
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          {{
+            item.lastname
+          }}
+          {{
+            item.firstname
+          }}
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <i class="fa fa-edit" (click)="onEdit(item)"></i>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <i class="fa fa-trash" (click)="onDelete(item.id)"></i>
+        </ol>
+      </ul>
+    </form>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,27 +1,61 @@
 # AcademicClassroom
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.6.
+## Run project
 
-## Development server
+Do this command before to run project : 
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+<pre>
 
-## Code scaffolding
+<b>npm i --save </b>
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+</pre>
 
-## Build
+After, you should do this : 
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+<pre>
 
-## Running unit tests
+<b>ng serve --open</b>
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+</pre>
 
-## Running end-to-end tests
+# Folders what you should review
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+## App component in `src/app`
 
-## Further help
+Check differents comments in
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+- `app.module.ts` 
+
+## Login component in `src/app/login`
+
+Check differents comments in
+
+- `login.component.html`
+- `login.component.ts`
+- `login.module.ts` 
+
+## Register component in `src/app/register`
+
+Check differents comments in
+
+- `register.component.html`
+- `register.component.ts`
+- `register.module.ts` 
+
+## LoginUser interface in `src/modals/login-user`
+
+Check differents comments in
+
+- `login-user.ts`
+
+## Assets in `src/assets`
+
+Check differents folders like : 
+
+- `css` 
+- `fonts`
+- `images`
+
+## Styles in `src/styles.scss`
+
+Check `styles.scss` file to see all `font-face` for use the differents fonts of your project.
